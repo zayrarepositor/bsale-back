@@ -1,7 +1,7 @@
 {
   "name": "bsale-test",
   "version": "1.0.0",
-  "description": "",
+  "description": "full stack bsale challenge: apirest",
   "main": "index.js",
   "type": "module",
   "scripts": {
@@ -9,7 +9,7 @@
     "dev": "nodemon src/index.js"
   },
   "keywords": [],
-  "author": "",
+  "author": "zayra velasco",
   "license": "ISC",
   "dependencies": {
     "cors": "^2.8.5",

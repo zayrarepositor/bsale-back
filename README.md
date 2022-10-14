@@ -9,14 +9,15 @@
 
 ## Deployment (Railway)
 
-* Index (Root and 404 Page): https://bsale-server.up.railway.app/
-* Products: https://bsale-server.up.railway.app or https://bsale-server.up.railway.app?category=5&page=2&size=5&order=desc
-  Query params (not required):
-    - category: category id (integer)
-    - page: response page (integer)
-    - size: rows per page (integer)
-    - order: rows id order (asc or desc - case no sensitive)
-* Documentation: https://bsale-server.up.railway.app/api-docs
+Endpoints:
+  * Index (Root and 404 Page): https://bsale-server.up.railway.app/
+  * Products: https://bsale-server.up.railway.app/products or https://bsale-server.up.railway.app/products?name=carmen&category=2&page=1&size=5&order=desc
+    Query params (not required):
+      - category: category id (integer)
+      - page: response page (integer)
+      - size: rows per page (integer)
+      - order: rows id order (asc or desc - case no sensitive)
+  * Documentation: https://bsale-server.up.railway.app/api-docs
 
 ## Contact info
 
@@ -37,7 +38,7 @@
 
 <p align="center">Documentation</p>
 
-![doc1](https://user-images.githubusercontent.com/95602965/195794587-043f2910-c145-4307-a380-f3271e386b46.png)
-![doc2](https://user-images.githubusercontent.com/95602965/195794592-9f39fb4f-11c2-40fb-adb5-1296a0d30410.png)
+![doc1](https://user-images.githubusercontent.com/95602965/195952800-1db94f89-17ee-4b68-b5b6-60d731578e63.png)
+![doc2](https://user-images.githubusercontent.com/95602965/195952802-5eae980a-e017-4566-85c4-40f012f56d21.png)
 
 Good Life! ( ͡~ ͜ʖ ͡°)

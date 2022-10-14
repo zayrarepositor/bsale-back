@@ -72,10 +72,10 @@ const router = Router();
 
 /**
  * @swagger
- * /products?category=1&page=1&size=10&order=asc:
+ * /products?name=%name%&category=category&page=page&size=size&order=[asc,desc]:
  *   get:
  *     summary: get products
- *     description: Get products filtered by category id or get all products (by default). pagination queries (page, size and order) are acepted.
+ *     description: Get products filtered by name and/or category id or get all products (by default). pagination queries (page, size and order) are acepted.
  *     tags: [Product]
  *     parameters:
  *       - in: query
@@ -83,6 +83,11 @@ const router = Router();
  *         schema:
  *           type: string
  *         description: product's category id
+ *       - in: query
+ *         name: name
+ *         schema:
+ *           type: string
+ *         description: product's name (like available)
  *       - in: query
  *         name: page
  *         schema:

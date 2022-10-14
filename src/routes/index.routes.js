@@ -64,7 +64,7 @@ router.get('/', (req, res) =>
     description:
       'rest api (incomplete) for bsale store with node, express & mysql',
     version: '1.0.0',
-    doc: '',
+    doc: 'https://bsale-server.up.railway.app/api-docs/',
   }),
 );
 

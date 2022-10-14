@@ -8,7 +8,7 @@ export const getProducts = async (req, res) => {
     return error({ res, message: 'invalid category', status: 400 });
 
   try {
-    const data = await selectProducts(req);
+    const data = await selectProducts(req, res);
 
     if (data.length === 0) return error({ res, message: 'products not found' });
 

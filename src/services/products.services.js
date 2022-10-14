@@ -2,7 +2,7 @@ import { pool } from '../db.js';
 
 import { serverError } from '../helpers/responses.js';
 
-export const selectProducts = async (req) => {
+export const selectProducts = async (req, res) => {
   const { page, size, category, order } = req.query;
 
   let defaultPage = 1;

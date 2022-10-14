@@ -55,11 +55,13 @@ const router = Router();
  *                 name: ENERGETICA MR BIG"
  *                 url_image: https://dojiw2m9tvv09.cloudfront.net/11132/product/misterbig3308256.jpg
  *                 price: 1490
+ *                 discount: 10
  *               - id: 6
  *                 category: 1
  *                 name: ENERGETICA RED BULL"
  *                 url_image: https://dojiw2m9tvv09.cloudfront.net/11132/product/redbull8381.jpg
  *                 price: 1490
+ *                 discount: 10
  *     400:
  *       description: Bad Request - invalid category
  *     404:

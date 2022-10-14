@@ -3,7 +3,7 @@ import { selectProducts } from '../services/products.services.js';
 import { success, error, serverError } from '../helpers/responses.js';
 
 export const getProducts = async (req, res) => {
-  const { category } = req.query;
+  const { category, name } = req.query;
   if (category && Number.isNaN(Number(category)))
     return error({ res, message: 'invalid category', status: 400 });
 
@@ -14,7 +14,10 @@ export const getProducts = async (req, res) => {
 
     return success({
       res,
-      message: category ? `all products category: ${category}` : `all products`,
+      message: `all products ${
+        (category ? 'category: ' + category : '') +
+        (name ? ' name: ' + name : '')
+      }`,
       data,
     });
   } catch (err) {

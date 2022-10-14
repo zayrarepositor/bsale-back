@@ -48,7 +48,7 @@ const router = Router();
  *                 items:
  *                   $ref: '#/components/schemas/Product'
  *           example:
- *             message: all products
+ *             message: all products category 1 name energetica
  *             data:
  *               - id: 5
  *                 category: 1
@@ -72,22 +72,22 @@ const router = Router();
 
 /**
  * @swagger
- * /products?name=%name%&category=category&page=page&size=size&order=[asc,desc]:
+ * /products:
  *   get:
- *     summary: get products
+ *     summary: /products?name=%name%&category=category&page=page&size=size&order=[asc,desc]
  *     description: Get products filtered by name and/or category id or get all products (by default). pagination queries (page, size and order) are acepted.
  *     tags: [Product]
  *     parameters:
- *       - in: query
- *         name: category
- *         schema:
- *           type: string
- *         description: product's category id
  *       - in: query
  *         name: name
  *         schema:
  *           type: string
  *         description: product's name (like available)
+ *       - in: query
+ *         name: category
+ *         schema:
+ *           type: string
+ *         description: product's category id
  *       - in: query
  *         name: page
  *         schema:

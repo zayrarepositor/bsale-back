@@ -29,7 +29,7 @@ export const selectProducts = async (req, res) => {
 
   try {
     const [rows] = await pool.query(
-      `select p.id, p.category, p.name, p.url_image, p.price from product p join category c on p.category=c.id ${categoryRequest} ${orderRequest} limit ${
+      `select p.id, p.category, p.name, p.url_image, p.price, p.discount from product p join category c on p.category=c.id ${categoryRequest} ${orderRequest} limit ${
         (defaultPage - 1) * defaultSize
       }, ${defaultSize}`,
     );

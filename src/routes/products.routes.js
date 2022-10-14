@@ -28,6 +28,9 @@ const router = Router();
  *         price:
  *           type: integer
  *           description: product price
+ *         discount:
+ *           type: integer
+ *           description: product discount percentage
  *   responses:
  *     getProducts:
  *       description: project information
